@@ -1,0 +1,24 @@
+nullx
+undefinedx
+truex
+falsex
+
+0x
+0e5x
+11x5
+
+"simple " string"
+'simple ' string'
+" a\x \y"
+" a \xAB \0 \uABCDE \u{234792384729387429384}"
+
+/foo
+/foo/bar/
+
+["blah", blag]
+["blag"
+
+{foo}
+{foo:}
+foo:
+{{{{{{{{{{{}}}}}}}}}}

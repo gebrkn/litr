@@ -1,0 +1,38 @@
+{
+    "name": "litr",
+    "version": "0.0.1",
+    "author": {
+        "name": "Georg Barikin",
+        "email": "georg@merribithouse.net"
+    },
+    "description": "Evaluate javascript literals",
+    "keywords": [
+        "array",
+        "object",
+        "literal",
+        "parse",
+        "eval"
+    ],
+    "files": [
+        "index.js",
+        "index.js.map"
+    ],
+    "homepage": "https://github.com/gebrkn/litr",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gebrkn/litr.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "parser": "pegjs -o src/parser.generated.js src/grammar.pegjs",
+        "build": "npm run parser && NODE_ENV=production webpack",
+        "test": "npm run build && jest"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "pegjs": "^0.10.0",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9"
+    }
+}
