@@ -1,0 +1,2 @@
+# litr
+Evaluate javascript literals
